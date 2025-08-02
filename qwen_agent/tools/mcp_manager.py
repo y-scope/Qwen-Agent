@@ -450,7 +450,7 @@ class MCPClient:
         else:
             response = await self.session.call_tool(tool_name, tool_args)
             if not response or response.isError:
-                return 'execute error'
+                return f'execute error {response}'
             texts = [c.text for c in response.content if c.type == 'text']
             return '\n\n'.join(texts)
 
