@@ -63,7 +63,7 @@ setup(
         'jsonlines',
         'jsonschema',
         'openai',
-        'pydantic>=2.3.0',
+        'pydantic>=2.11.7',
         'requests',
         'tiktoken',
     ],
@@ -114,10 +114,10 @@ setup(
         # Extra dependencies for Gradio-based GUI:
         'gui': [
             # Gradio has bad version compatibility. Therefore, we use `==` instead of `>=`.
-            'pydantic==2.9.2',
-            'pydantic-core==2.23.4',
-            'gradio==5.23.1',
-            'gradio-client==1.8.0',
+            'pydantic==2.11.7',
+            'pydantic-core==2.33.2',
+            'gradio==5.42.0',
+            'gradio-client==1.11.1',
             'modelscope_studio==1.1.7',
         ],
     },
